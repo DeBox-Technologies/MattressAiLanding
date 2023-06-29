@@ -1,22 +1,13 @@
-import { useState, useEffect } from 'react'
-
 const PricingCards = () => {
-  const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.scrollY);
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
   return (
     <>
-      <div style={{ transform: `translateY(-${offsetY * 0.5}px)` }}>
-        <h1 className="font-header text-7xl font-black mb-32 text-secondary-200 dark:text-secondary-50 flex justify-center items-center">Pricing</h1>
-        <div className="flex flex-row justify-center items-center gap-6 -mt-24 bg-secondary-200 dark:bg-gray-600 mx-20 py-14 rounded-xl mb-24">
+      <div>
+        {/* <h1 className="font-header text-7xl font-black mb-32 text-secondary-200 dark:text-secondary-50 flex justify-center items-center">Pricing</h1> */}
+        <div className="flex flex-row justify-center items-center gap-6 -mt-24 bg-gradient-to-br from-secondary-50 to-primary-100 dark:from-gray-800 dark:to-primary-200 mx-20 py-14 rounded-xl mb-24">
           <div className="w-full max-w-sm p-4 bg-secondary-50/90 border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
               <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Free Plan</h5>
-              <div className="flex items-baseline text-gray-900 dark:text-secondary-50">
+              <div className="flex items-baseline text-secondary-200 dark:text-secondary-50">
                   <span className="text-3xl font-semibold">$</span>
                   <span className="text-5xl font-extrabold tracking-tight">0</span>
                   <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
@@ -55,7 +46,7 @@ const PricingCards = () => {
           </div>
           <div className=" scale-105 shadow-2xl w-full max-w-sm p-4 bg-secondary-50 border border-gray-200 rounded-lg sm:p-8 dark:bg-gray-800 dark:border-gray-700">
               <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Business plan</h5>
-              <div className="flex items-baseline text-gray-900 dark:text-secondary-50">
+              <div className="flex items-baseline text-secondary-200 dark:text-secondary-50">
                   <span className="text-3xl font-semibold">$</span>
                   <span className="text-5xl font-extrabold tracking-tight">350</span>
                   <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
@@ -94,7 +85,7 @@ const PricingCards = () => {
           </div>
           <div className="w-full max-w-sm p-4 bg-secondary-50/90 border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
               <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Enterprise plan</h5>
-              <div className="flex items-baseline text-gray-900 dark:text-secondary-50">
+              <div className="flex items-baseline text-secondary-200 dark:text-secondary-50">
                   <span className="text-3xl font-semibold">$</span>
                   <span className="text-5xl font-extrabold tracking-tight">450</span>
                   <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>

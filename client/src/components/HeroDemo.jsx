@@ -11,7 +11,7 @@ const HeroDemo = () => {
   }, []);
 
   return (
-    <div className='min-h-screen font-body'>
+    <div className='font-body'>
       <div className='bg-gradient-to-br from-secondary-50 to-primary-200 dark:from-gray-900 dark:to-primary-200 mx-5 lg:mx-20 flex flex-col lg:justify-center items-center h-[28rem] sm:h-[45rem] lg:h-[50rem] mt-10 rounded-xl shadow-2xl' style={{ transform: `translateY(-${offsetY * 0.7}px) scale(${1 + offsetY * -0.0002}` }}>
       <h1 className="my-12 text-3xl md:text-5xl lg:text-7xl font-black text-secondary-200 dark:text-secondary-50 font-header">Sell Smarter,<br />Sleep Better.</h1>
         <div className='mockup-window bg-primary-200 w-[88%] shadow-xl mb-4' style={{ transform: `translateY(-${offsetY * 0.5}px) scale(${1 + offsetY * 0.00075})` }}>

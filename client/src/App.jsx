@@ -10,8 +10,8 @@ function App() {
       <div className='bg-primary-50 dark:bg-gray-800 min-h-screen pb-10'>
         <Navbar />
         <HeroDemo />
-        <PricingCards />
         <InfoCards />
+        <PricingCards />
       </div>
     </>
   )
