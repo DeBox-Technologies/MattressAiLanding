@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar"
 import HeroDemo from "./components/HeroDemo"
 import PricingCards from "./components/PricingCards"
 import InfoCards from "./components/Infocards"
+import EndPageHero from "./components/EndPageHero"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <HeroDemo />
         <InfoCards />
         <PricingCards />
+        <EndPageHero />
       </div>
     </>
   )
