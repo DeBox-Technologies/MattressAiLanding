@@ -2,7 +2,7 @@ const PricingCards = () => {
 
   return (
     <>
-      <div>
+      <div className="2xl:max-w-screen-2xl mx-auto">
         <h1 className="font-header text-center text-5xl md:text-6xl lg:text-7xl font-black mb-32 text-secondary-200 dark:text-secondary-50 flex justify-center items-center">Pricing</h1>
         <div className="flex flex-col lg:flex-row justify-center items-center gap-6 -mt-24 bg-gradient-to-br from-secondary-50 to-primary-100 dark:from-gray-800 dark:to-primary-200 mx-5 md:mx-36 lg:mx-20 p-8 md:py-12 lg:py-14 rounded-xl mb-24">
           <div className="w-full max-w-xs md:max-w-sm p-4 bg-secondary-50/90 border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">

@@ -96,6 +96,7 @@ const InfoCards = () => {
 
   return (
     <>
+    <div className="mx-auto max-w-screen-2xl">
       <h1 className='font-header text-center text-4xl md:text-5xl lg:text-7xl font-black mb-24 text-secondary-200 dark:text-secondary-50 flex justify-center items-center'>
         Selling Sleep, Seamlessly.
       </h1>
@@ -112,7 +113,7 @@ const InfoCards = () => {
           whileHover={{ scale: 1.05 }}
           viewBox='0 0 100 100'
           xmlns='http://www.w3.org/2000/svg'
-          className='absolute w-36 left-1 -mt-[200%] md:w-52 md:left-1 md:-mt-[60%] lg:w-72 lg:left-24 lg:-mt-[40%]'>
+          className='absolute w-36 left-1 -mt-[200%] md:w-52 md:left-1 md:-mt-[60%] lg:w-72 lg:left-14 lg:-mt-[50%] 2xl:w-72 2xl:left-96 2xl:-mt-[30%]'>
           <defs>
             <linearGradient id='gradient' gradientTransform='rotate(45)'>
               <stop offset='0%' stopColor='#116A7B' />
@@ -133,7 +134,7 @@ const InfoCards = () => {
           whileHover={{ scale: 1.05 }}
           viewBox='0 0 100 100'
           xmlns='http://www.w3.org/2000/svg'
-          className='absolute w-36 -right-14 mt-[190%] md:w-48 md:-right-16 md:mt-[50%] lg:w-64 lg:right-12 lg:mt-[48%] lg:z-50 lg:blur-sm'>
+          className='absolute w-36 -right-14 mt-[190%] md:w-48 md:-right-16 md:mt-[50%] lg:w-64 lg:right-12 lg:mt-[48%] lg:z-50 lg:blur-sm 2xl:w-72 2xl:right-96 2xl:mt-[34%]'>
           <defs>
             <linearGradient id='gradient2' gradientTransform='rotate(45)'>
               <stop offset='0%' stopColor='#116A7B' />
@@ -215,6 +216,7 @@ const InfoCards = () => {
           </motion.div>
         </div>
       </div>
+    </div>
     </>
   );
 };
