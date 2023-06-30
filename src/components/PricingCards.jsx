@@ -3,9 +3,9 @@ const PricingCards = () => {
   return (
     <>
       <div>
-        <h1 className="font-header text-7xl font-black mb-32 text-secondary-200 dark:text-secondary-50 flex justify-center items-center">Pricing</h1>
-        <div className="flex flex-row justify-center items-center gap-6 -mt-24 bg-gradient-to-br from-secondary-50 to-primary-100 dark:from-gray-800 dark:to-primary-200 mx-20 py-14 rounded-xl mb-24">
-          <div className="w-full max-w-sm p-4 bg-secondary-50/90 border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+        <h1 className="font-header text-center text-5xl md:text-6xl lg:text-7xl font-black mb-32 text-secondary-200 dark:text-secondary-50 flex justify-center items-center">Pricing</h1>
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-6 -mt-24 bg-gradient-to-br from-secondary-50 to-primary-100 dark:from-gray-800 dark:to-primary-200 mx-5 md:mx-36 lg:mx-20 p-8 md:py-12 lg:py-14 rounded-xl mb-24">
+          <div className="w-full max-w-xs md:max-w-sm p-4 bg-secondary-50/90 border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
               <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Free Plan</h5>
               <div className="flex items-baseline text-secondary-200 dark:text-secondary-50">
                   <span className="text-3xl font-semibold">$</span>
@@ -44,7 +44,7 @@ const PricingCards = () => {
               </ul>
               <button type="button" className="text-secondary-50 bg-primary-200 hover:bg-primary-200 focus:ring-4 focus:outline-none focus:ring-primary-200 dark:focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
           </div>
-          <div className=" scale-105 shadow-2xl w-full max-w-sm p-4 bg-secondary-50 border border-gray-200 rounded-lg sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div className="lg:scale-105 max-w-xs md:max-w-sm shadow-2xl w-full p-4 bg-secondary-50 border border-gray-200 rounded-lg sm:p-8 dark:bg-gray-800 dark:border-gray-700">
               <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Business plan</h5>
               <div className="flex items-baseline text-secondary-200 dark:text-secondary-50">
                   <span className="text-3xl font-semibold">$</span>
@@ -83,7 +83,7 @@ const PricingCards = () => {
               </ul>
               <button type="button" className="text-secondary-50 bg-primary-200 hover:bg-primary-200 focus:ring-4 focus:outline-none focus:ring-primary-200 dark:focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
           </div>
-          <div className="w-full max-w-sm p-4 bg-secondary-50/90 border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div className="w-full max-w-xs md:max-w-sm p-4 bg-secondary-50/90 border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
               <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Enterprise plan</h5>
               <div className="flex items-baseline text-secondary-200 dark:text-secondary-50">
                   <span className="text-3xl font-semibold">$</span>
