@@ -15,20 +15,6 @@ const cardVariants = {
   },
 };
 
-const svgVariants = {
-  offscreen: { y: "15%", x: "100%", scale: 0.5 },
-  onscreen: {
-    y: "0%",
-    x: "0%",
-    scale: 1,
-    transition: {
-      type: "spring",
-      bounce: 0.9,
-      duration: 0.1,
-    },
-  },
-};
-
 const InfoCards = () => {
   const x = useMotionValue(window.innerWidth / 2);
   const y = useMotionValue(window.innerHeight / 2);
@@ -107,10 +93,6 @@ const InfoCards = () => {
             y: svgY,
             transition: "transform .2s",
           }}
-          variants={svgVariants}
-          initial='offscreen'
-          whileInView='onscreen'
-          whileHover={{ scale: 1.05 }}
           viewBox='0 0 100 100'
           xmlns='http://www.w3.org/2000/svg'
           className='absolute w-36 left-1 -mt-[200%] md:w-52 md:left-1 md:-mt-[60%] lg:w-72 lg:left-14 lg:-mt-[50%] 2xl:w-72 2xl:left-96 2xl:-mt-[30%]'>
@@ -128,10 +110,6 @@ const InfoCards = () => {
             y: svgY,
             transition: "transform .2s",
           }}
-          variants={svgVariants}
-          initial='offscreen'
-          whileInView='onscreen'
-          whileHover={{ scale: 1.05 }}
           viewBox='0 0 100 100'
           xmlns='http://www.w3.org/2000/svg'
           className='absolute w-36 -right-14 mt-[190%] md:w-48 md:-right-16 md:mt-[50%] lg:w-64 lg:right-12 lg:mt-[48%] lg:z-50 lg:blur-sm 2xl:w-72 2xl:right-96 2xl:mt-[34%]'>
