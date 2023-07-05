@@ -9,7 +9,9 @@ const ProductShowcase = () => {
           <h1 className='text-left text-4xl lg:text-7.5xl font-black text-secondary-200 dark:text-secondary-50 font-header'>
             Sleep Better.
           </h1>
-          <button className='bg-primary-200 hover:bg-green-600 text-secondary-50 p-2 px-8 rounded-xl mt-14'>
+          <a
+            href='https://dashboard.themattressai.com'
+            className='bg-primary-200 hover:bg-green-600 text-secondary-50 p-2 px-8 rounded-xl mt-14'>
             <div className='flex flex-row gap-2 justify-center items-center'>
               Try Today
               <svg
@@ -26,7 +28,7 @@ const ProductShowcase = () => {
                   strokeLinejoin='round'></path>
               </svg>
             </div>
-          </button>
+          </a>
         </div>
         <div className='p-4 ml-2 md:ml-0 w-full lg:w-1/2 h-full overflow-hidden rounded-2xl'>
           <img

@@ -9,7 +9,7 @@ const HeroDemo = () => {
     const element = elementRef.current;
     if (element) {
       const rect = element.getBoundingClientRect();
-      const threeQuartersScreen = window.innerHeight * 0.05;
+      const threeQuartersScreen = window.innerHeight * 0.02;
       if(rect.top <= threeQuartersScreen){
           const offset = Math.max(0, threeQuartersScreen - rect.top);
           setOffsetY(offset);
@@ -46,7 +46,7 @@ const HeroDemo = () => {
                   <h5 className="mb-2 text-lg xl:text-2xl font-semibold tracking-tight text-secondary-50 dark:text-white">Ready to revolutionize?</h5>
               </a>
               <p className="mb-3 font-normal text-secondary-50 text-md xl:text-xl">Try out MattressAi for yourself today.</p>
-              <a href="#" className="text-md xl:text-xl inline-flex items-center text-secondary-50 hover:underline">
+              <a href="https://dashboard.themattressai.com" className="text-md xl:text-xl inline-flex items-center text-secondary-50 hover:underline">
                   Explore our Ai
                   <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
               </a>
