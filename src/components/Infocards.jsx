@@ -1,4 +1,4 @@
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { useRef, useEffect } from "react";
 
 const cardVariants = {
@@ -16,47 +16,19 @@ const cardVariants = {
 };
 
 const InfoCards = () => {
-  const x = useMotionValue(window.innerWidth / 2);
-  const y = useMotionValue(window.innerHeight / 2);
-
-  const xRange = [window.innerWidth / 2 - 100, window.innerWidth / 2 + 100];
-  const yRange = [window.innerHeight / 2 - 100, window.innerHeight / 2 + 100];
-
-  const cardX = useTransform(x, xRange, ["-5px", "5px"]);
-  const cardY = useTransform(y, yRange, ["-5px", "5px"]);
-
-  const svgX = useTransform(x, xRange, ["-20px", "20px"]);
-  const svgY = useTransform(y, yRange, ["-20px", "20px"]);
-
-  useEffect(() => {
-    const handleMouseMove = (event) => {
-      x.set(event.clientX);
-      y.set(event.clientY);
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, [x, y]);
-
   const stopTrackingRef = useRef(null); // Ref for the element that stops tracking
-  const observerRef = useRef(null); // Ref for the intersection observer
+  const observerRef = useRef(null);
 
   useEffect(() => {
-    const handleMouseMove = (event) => {
-      x.set(event.clientX);
-      y.set(event.clientY);
-    };
-
     const handleIntersection = (entries) => {
       if (entries[0].isIntersecting) {
         // Stop tracking when the element is in view
         window.removeEventListener("mousemove", handleMouseMove);
+        window.removeEventListener("touchmove", handleTouchMove);
       } else {
         // Resume tracking when the element is out of view
         window.addEventListener("mousemove", handleMouseMove);
+        window.addEventListener("touchmove", handleTouchMove);
       }
     };
 
@@ -70,15 +42,12 @@ const InfoCards = () => {
       observerRef.current.observe(stopTrackingRef.current);
     }
 
-    window.addEventListener("mousemove", handleMouseMove);
-
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
       if (observerRef.current && stopTrackingRef.current) {
         observerRef.current.unobserve(stopTrackingRef.current);
       }
     };
-  }, [x, y]);
+  }, []);
 
   return (
     <>
@@ -88,11 +57,6 @@ const InfoCards = () => {
       </h1>
       <div className='p-8 xl:p-16 mx-4 md:mx-5 xl:mx-20 my-5 bg-gradient-to-br from-secondary-50 to-primary-100 dark:from-gray-800 dark:to-primary-200 rounded-xl mb-36 flex justify-around items-center'>
         <motion.svg
-          style={{
-            x: svgX,
-            y: svgY,
-            transition: "transform .2s",
-          }}
           viewBox='0 0 100 100'
           xmlns='http://www.w3.org/2000/svg'
           className='absolute w-36 left-1 -mt-[200%] sm:hidden md:inline-block md:w-52 md:left-1 md:-mt-[60%] lg:w-72 lg:left-14 lg:-mt-[50%] xl:w-72 xl:left-4 xl:-mt-[50%] 2xl:hidden'>
@@ -105,14 +69,9 @@ const InfoCards = () => {
           <circle cx='50' cy='50' r='50' fill='url(#gradient)' />
         </motion.svg>
         <motion.svg
-          style={{
-            x: svgX,
-            y: svgY,
-            transition: "transform .2s",
-          }}
           viewBox='0 0 100 100'
           xmlns='http://www.w3.org/2000/svg'
-          className='absolute w-36 -right-14 mt-[190%] sm:hidden md:inline-block md:w-48 md:-right-16 md:mt-[55%] lg:w-64 lg:right-12 lg:mt-[48%] lg:blur-sm xl:w-72 xl:right-4 xl:mt-[45%] 2xl:hidden'>
+          className='absolute w-36 -right-14 mt-[190%] sm:hidden md:inline-block md:w-48 md:-right-16 md:mt-[55%] lg:w-64 lg:right-12 lg:mt-[48%] xl:w-72 xl:right-4 xl:mt-[45%] 2xl:hidden'>
           <defs>
             <linearGradient id='gradient2' gradientTransform='rotate(45)'>
               <stop offset='0%' stopColor='#116A7B' />
@@ -123,7 +82,6 @@ const InfoCards = () => {
         </motion.svg>
         <div className='grid md:grid-cols-2 gap-8 lg:gap-14 lg:mx-24'>
           <motion.div
-            style={{ x: cardX, y: cardY, transition: "transform .2s" }}
             transition={{ type: "spring", stiffness: 500, damping: 10 }}
             className='card bg-secondary-50/10 dark:bg-gray-900/30 backdrop-blur-md rounded-xl p-4 lg:p-8 transform transition-all ease-in-out duration-500 flex justify-center items-center text-left shadow-2xl'
             variants={cardVariants}
@@ -143,7 +101,6 @@ const InfoCards = () => {
           </motion.div>
 
           <motion.div
-            style={{ x: cardX, y: cardY, transition: "transform .2s" }}
             transition={{ type: "spring", stiffness: 500, damping: 10 }}
             className='card bg-secondary-50/10 dark:bg-gray-900/30 backdrop-blur-md rounded-xl p-4 lg:p-8 transform transition-all ease-in-out duration-500 flex justify-center items-center text-left shadow-2xl'
             variants={cardVariants}
@@ -157,7 +114,6 @@ const InfoCards = () => {
             />
           </motion.div>
           <motion.div
-            style={{ x: cardX, y: cardY, transition: "transform .2s" }}
             transition={{ type: "spring", stiffness: 500, damping: 10 }}
             className='card hidden md:inline-block bg-secondary-50/10 dark:bg-gray-900/30 backdrop-blur-md rounded-xl p-4 lg:p-8 transform transition-all ease-in-out duration-500 text-center shadow-2xl'
             variants={cardVariants}
@@ -174,7 +130,6 @@ const InfoCards = () => {
           </motion.div>
           <motion.div
             ref={stopTrackingRef}
-            style={{ x: cardX, y: cardY, transition: "transform .2s" }}
             transition={{ type: "spring", stiffness: 500, damping: 10 }}
             className='card bg-secondary-50/10 dark:bg-gray-900/30 backdrop-blur-md rounded-xl p-4 lg:p-8 transform transition-all ease-in-out duration-500 flex justify-center items-center text-left shadow-2xl'
             variants={cardVariants}

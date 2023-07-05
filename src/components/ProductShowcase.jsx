@@ -1,17 +1,17 @@
 const ProductShowcase = () => {
   return (
     <div className='font-body 2xl:max-w-screen-2xl mx-auto'>
-      <div className='bg-gradient-to-br from-secondary-50 to-primary-200 dark:from-gray-900 dark:to-primary-200 mx-0 md:mx-5 lg:mx-20 flex flex-col lg:flex-row justify-center items-center h-[40rem] lg:h-[50rem] mt-10 rounded-xl shadow-2xl mb-24'>
-        <div className='flex flex-col justify-center items-center lg:w-1/2'>
-          <h1 className='pt-12 lg:pt-0 lg:py-10 text-left text-4xl lg:text-7.5xl font-black text-secondary-200 dark:text-secondary-50 font-header'>
+      <div className='bg-gradient-to-br from-secondary-50 to-primary-200 dark:from-gray-900 dark:to-primary-200 mx-5 lg:mx-20 flex flex-col lg:flex-row justify-center items-center h-[40rem] lg:h-[50rem] mt-10 rounded-xl shadow-2xl mb-24'>
+        <div className='flex flex-col justify-center items-center lg:items-start lg:w-1/2'>
+          <h1 className='lg:ml-12 pt-12 lg:pt-0 lg:py-2 text-left text-4xl lg:text-6xl font-black text-secondary-200 dark:text-secondary-50 font-header'>
             Sell Smarter,
           </h1>
-          <h1 className='text-left text-4xl lg:text-7.5xl font-black text-secondary-200 dark:text-secondary-50 font-header'>
-            Sleep Better.
+          <h1 className='lg:ml-12 text-left text-5xl lg:text-7.5xl font-black text-secondary-200 dark:text-secondary-50 font-header'>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r to-primary-200 from-secondary-200 dark:to-primary-200 dark:from-secondary-50">Sleep Better.</span>
           </h1>
           <a
             href='https://dashboard.themattressai.com'
-            className='bg-primary-200 hover:bg-green-600 text-secondary-50 p-2 px-8 rounded-xl mt-14'>
+            className='lg:ml-12 bg-primary-200 hover:bg-green-600 text-secondary-50 p-2 px-8 rounded-xl mt-14'>
             <div className='flex flex-row gap-2 justify-center items-center'>
               Try Today
               <svg
