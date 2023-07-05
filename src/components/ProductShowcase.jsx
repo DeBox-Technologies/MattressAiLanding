@@ -11,7 +11,7 @@ const ProductShowcase = () => {
           </h1>
           <a
             href='https://dashboard.themattressai.com'
-            className='lg:ml-12 bg-primary-200 hover:bg-green-600 text-secondary-50 p-2 px-8 rounded-xl mt-14'>
+            className='lg:ml-12 bg-primary-200 hover:bg-green-600 text-secondary-50 p-2 px-8 rounded-xl mt-8'>
             <div className='flex flex-row gap-2 justify-center items-center'>
               Try Today
               <svg
