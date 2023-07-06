@@ -32,7 +32,7 @@ const ProductShowcase = () => {
         </div>
         <div className='p-4 ml-2 md:ml-0 w-full lg:w-1/2 h-full overflow-hidden rounded-2xl'>
           <img
-            src='https://res.cloudinary.com/djr22sgp3/image/upload/v1688478806/MattressAiMockup_nmb2sz.webp'
+            src='https://res.cloudinary.com/djr22sgp3/image/upload/v1688637645/MattressAiMockup_hgttzg.png'
             className='w-full h-full object-cover object-center'
           />
         </div>

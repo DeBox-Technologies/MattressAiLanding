@@ -63,12 +63,12 @@ const InfoCards = () => {
             </div>
             <div className='rounded-xl overflow-hidden h-[140px] md:h-[262px]'>
               <video
-                className='w-full h-full object-cover object-center'
+                className='w-full h-full object-fit object-center bg-gray-950 py-2'
                 autoPlay
                 loop
                 muted
                 playsInline
-                src='https://res.cloudinary.com/djr22sgp3/video/upload/v1687277338/pexels-rostislav-uzunov-9150545-1920x1080-24fps_zsisxc.mp4'
+                src='https://res.cloudinary.com/djr22sgp3/video/upload/v1688638378/MattressAi_cemo_r0jaxf.mov'
               />
             </div>
           </div>
