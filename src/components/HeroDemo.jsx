@@ -25,7 +25,7 @@ const HeroDemo = () => {
 
   return (
     <div className='font-body 2xl:max-w-screen-2xl mx-auto relative'>
-      <div ref={elementRef} className='bg-gradient-to-br from-secondary-50 to-primary-200 dark:from-gray-900 dark:to-primary-200 mx-5 lg:mx-20 flex flex-col lg:justify-center items-center h-[42rem] lg:h-[50rem] mt-10 rounded-xl shadow-2xl mb-24'>
+      <div ref={elementRef} className='bg-gradient-to-br from-secondary-50 to-primary-200 dark:from-gray-900 dark:to-primary-200 mx-5 lg:mx-20 flex flex-col lg:justify-center items-center h-[42rem] lg:h-[50rem] mt-10 rounded-xl shadow-2xl mb-14 lg:mb-24'>
       <h1 className="my-14 xl:my-14 pb-4 text-center mx-5 lg:mx-0 text-4xl md:text-4.5xl lg:text-7xl font-black text-secondary-200 dark:text-secondary-50 font-header">Automate your sale process.</h1>
         <div className='mockup-window -mr-36 md:mr-0 bg-primary-200 w-[88%] shadow-xl mb-4' style={{ transform: `translateY(-${offsetY * 0.5}px) scale(${1 + offsetY * 0.00075})` }}>
           <div className='px-4 py-2 bg-gray-700 flex justify-center items-center'>

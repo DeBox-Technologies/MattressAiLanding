@@ -1,39 +1,73 @@
+import { useState, useEffect, useRef } from 'react';
+
 const ProductShowcase = () => {
+  const [offsetY, setOffsetY] = useState(0);
+  const elementRef = useRef(null);
+  const offsetDelay = 500; // Adjust the offset delay as needed
+
+  const handleScroll = () => {
+    const element = elementRef.current;
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      const threeQuartersScreen = window.innerHeight * 0.1;
+      if(rect.top <= threeQuartersScreen){
+          const offset = Math.max(0, threeQuartersScreen - rect.top);
+          setOffsetY(offset);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className='font-body 2xl:max-w-screen-2xl mx-auto'>
-      <div className='bg-gradient-to-br from-secondary-50 to-primary-200 dark:from-gray-900 dark:to-primary-200 mx-5 lg:mx-20 flex flex-col lg:flex-row justify-center items-center h-[40rem] lg:h-[50rem] mt-10 rounded-xl shadow-2xl mb-24'>
-        <div className='flex flex-col justify-center items-center lg:items-start lg:w-1/2'>
-          <h1 className='lg:ml-12 pt-12 lg:pt-0 lg:py-2 text-left text-4xl lg:text-6xl font-black text-secondary-200 dark:text-secondary-50 font-header'>
-            Sell Smarter,
-          </h1>
-          <h1 className='lg:ml-12 text-left text-5xl lg:text-7.5xl font-black text-secondary-200 dark:text-secondary-50 font-header'>
-          <span class="text-transparent bg-clip-text bg-gradient-to-r to-primary-200 from-secondary-200 dark:to-primary-200 dark:from-secondary-50">Sleep Better.</span>
-          </h1>
-          <a
-            href='https://dashboard.themattressai.com'
-            className='lg:ml-12 bg-primary-200 hover:bg-green-600 text-secondary-50 p-2 px-8 rounded-xl mt-8'>
-            <div className='flex flex-row gap-2 justify-center items-center'>
-              Try Today
-              <svg
-                aria-hidden='true'
-                fill='none'
-                stroke='currentColor'
-                strokeWidth='1.5'
-                viewBox='0 0 24 24'
-                xmlns='http://www.w3.org/2000/svg'
-                className='w-4 h-4 mt-1'>
-                <path
-                  d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'></path>
-              </svg>
-            </div>
-          </a>
+    <div className='font-body 2xl:max-w-screen-2xl mx-auto lg:mt-8'>
+      <div className='bg-secondary-50 dark:bg-gray-900 mx-5 lg:mx-20 flex flex-col lg:flex-row lg:gap-14 justify-center items-center h-[45rem] lg:h-[45rem] mt-10 rounded-xl shadow-2xl mb-14 lg:mb-24'>
+        <div className="flex justify-center lg:w-2/3 lg:pl-12">
+          <div className='flex flex-col justify-center items-center lg:items-start'>
+            <h1 className='lg:ml-10 pt-12 lg:pt-0 lg:py-2 text-left text-4xl lg:text-5xl xl:text-7 font-black text-secondary-200 dark:text-secondary-50 font-header'>
+              Sell Smarter,
+            </h1>
+            <h1 className='lg:ml-10 text-left text-5xl lg:text-6xl xl:text-8xl font-black text-secondary-200 dark:text-secondary-50 font-header'>
+              <span class='text-transparent bg-clip-text bg-gradient-to-r to-primary-200 from-secondary-200 dark:to-primary-200 dark:from-secondary-50'>
+                Sleep Better.
+              </span>
+            </h1>
+            <h3 className='mx-5 text-center lg:ml-10 pt-4 lg:pt-4 lg:py-2 lg:text-left text-lg lg:text-xl xl:text-2xl text-secondary-200 dark:text-secondary-50 font-header'>
+              Mattress.AI will ask the questions to help your customers pick the
+              perfect premium mattress.
+            </h3>
+            <a
+              href='https://dashboard.themattressai.com'
+              className='lg:ml-10 bg-primary-200 hover:bg-green-600 text-secondary-50 p-2 px-8 rounded-xl lg:mt-8 mt-4'>
+              <div className='flex flex-row gap-2 justify-center items-center lg:text-xl'>
+                Try Today
+                <svg
+                  aria-hidden='true'
+                  fill='none'
+                  stroke='currentColor'
+                  strokeWidth='1.5'
+                  viewBox='0 0 24 24'
+                  xmlns='http://www.w3.org/2000/svg'
+                  className='w-4 h-4 lg:w-6 lg:h-6 mt-1'>
+                  <path
+                    d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'></path>
+                </svg>
+              </div>
+            </a>
+          </div>
         </div>
-        <div className='p-4 ml-2 md:ml-0 w-full lg:w-1/2 h-full overflow-hidden rounded-2xl'>
+        <div ref={elementRef} className='bg-gradient-to-br lg:scale-105 from-secondary-50 to-primary-200 dark:from-gray-900 dark:to-primary-200 shadow-2xl relative mt-4 lg:mt-0 w-full lg:w-1/2 h-full overflow-hidden rounded-xl flex justify-center items-center lg:items-end'>
           <img
+            ref={elementRef}
             src='https://res.cloudinary.com/djr22sgp3/image/upload/v1688637645/MattressAiMockup_hgttzg.png'
-            className='w-full h-full object-cover object-center'
+            className='w-full h-full object-cover object-center lg:absolute lg:top-0 lg:left-4 lg:z-10'
+            style={{ transform: `scale(${1.05 + offsetY * 0.0001})` }}
           />
         </div>
       </div>
