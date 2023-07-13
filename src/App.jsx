@@ -4,6 +4,7 @@ import HeroDemo from "./components/HeroDemo"
 import PricingCards from "./components/PricingCards"
 import InfoCards from "./components/Infocards"
 import EndPageHero from "./components/EndPageHero"
+import NewsletterSignup from "./components/NewsletterSignup"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <InfoCards />
         <PricingCards />
         <EndPageHero />
+        <NewsletterSignup />
       </div>
     </>
   )
