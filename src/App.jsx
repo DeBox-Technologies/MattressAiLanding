@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <div className='bg-primary-50 dark:bg-gray-800 min-h-screen pb-10'>
+      <div className='bg-primary-50 dark:bg-gray-800 min-h-screen pb-10 overflow-hidden'>
         <Navbar />
         <ProductShowcase />
         <HeroDemo />
