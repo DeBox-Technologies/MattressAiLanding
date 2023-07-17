@@ -3,6 +3,9 @@ export default {
   content: ['./src/**/*.{js,jsx}', 'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'class',
   theme: {
+    boxShadow: {
+      'green': '0 4px 40px 0 #4CA182',
+    },
     fontFamily: {
       'header': ['Montserrat', 'sans-serif'],
       'body': ['Montserrat', 'sans-serif'],

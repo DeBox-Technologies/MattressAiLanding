@@ -25,14 +25,14 @@ const ProductShowcase = () => {
 
   return (
     <div className='font-body 2xl:max-w-screen-2xl mx-auto lg:mt-8'>
-      <div className='bg-secondary-50 dark:bg-gray-900 mx-5 lg:mx-20 flex flex-col lg:flex-row lg:gap-14 justify-center items-center h-[45rem] lg:h-[45rem] mt-10 rounded-xl shadow-2xl mb-14 lg:mb-24'>
+      <div className='bg-secondary-50 dark:bg-gray-900 mx-5 lg:mx-20 drop-shadow-xl dark:shadow-green flex flex-col lg:flex-row lg:gap-14 justify-center items-center h-[45rem] lg:h-[45rem] mt-10 rounded-xl shadow-2xl mb-14 lg:mb-24'>
         <div className="flex justify-center lg:w-2/3 lg:pl-12">
           <div className='flex flex-col justify-center items-center lg:items-start'>
             <h1 className='lg:ml-10 pt-12 lg:pt-0 lg:py-2 text-left text-4xl lg:text-5xl xl:text-7 font-black text-secondary-200 dark:text-secondary-50 font-header'>
               Sell Smarter,
             </h1>
             <h1 className='lg:ml-10 text-left text-5xl lg:text-6xl xl:text-8xl font-black text-secondary-200 dark:text-secondary-50 font-header'>
-              <span class='text-transparent bg-clip-text bg-gradient-to-r to-primary-200 from-secondary-200 dark:to-primary-200 dark:from-secondary-50'>
+              <span className='text-transparent bg-clip-text bg-gradient-to-r to-primary-200 from-secondary-200 dark:to-primary-200 dark:from-secondary-50'>
                 Sleep Better.
               </span>
             </h1>
@@ -42,7 +42,7 @@ const ProductShowcase = () => {
             </h3>
             <a
               href='https://dashboard.themattressai.com'
-              className='lg:ml-10 bg-primary-200 hover:bg-green-600 text-secondary-50 p-2 px-8 rounded-xl lg:mt-8 mt-4'>
+              className='lg:ml-10 bg-primary-200 hover:bg-green-500 active:bg-green-600 text-secondary-50 hover:shadow-green transition-all ease-in-out duration-300 p-2 px-8 rounded-xl lg:mt-8 mt-4'>
               <div className='flex flex-row gap-2 justify-center items-center lg:text-xl'>
                 Try Today
                 <svg
@@ -52,7 +52,7 @@ const ProductShowcase = () => {
                   strokeWidth='1.5'
                   viewBox='0 0 24 24'
                   xmlns='http://www.w3.org/2000/svg'
-                  className='w-4 h-4 lg:w-6 lg:h-6 mt-1'>
+                  className='w-4 h-4 lg:w-6 lg:h-6 mt-1 hover:animate-pulse'>
                   <path
                     d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
                     strokeLinecap='round'
@@ -66,8 +66,8 @@ const ProductShowcase = () => {
           <img
             ref={elementRef}
             src='https://res.cloudinary.com/djr22sgp3/image/upload/v1688637645/MattressAiMockup_hgttzg.png'
-            className='w-full h-full object-cover object-center lg:absolute lg:top-0 lg:left-4 lg:z-10'
-            style={{ transform: `scale(${1.05 + offsetY * 0.0001})` }}
+            className='w-full h-full object-cover object-center lg:absolute lg:top-0 lg:z-10'
+            style={{ transform: `scale(${1 + offsetY * 0.0001})` }}
           />
         </div>
       </div>

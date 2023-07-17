@@ -16,8 +16,8 @@ function App() {
         <HeroDemo />
         <InfoCards />
         <PricingCards />
-        <EndPageHero />
         <NewsletterSignup />
+        <EndPageHero />
       </div>
     </>
   )
