@@ -17,7 +17,7 @@ function App() {
         <InfoCards />
         <PricingCards />
         <EndPageHero />
-        <footer className="bg-secondary-50 dark:bg-gray-800 p-2 h-full mx-auto rounded-t-2xl">
+        <footer className="bg-secondary-50 dark:bg-gray-900 p-2 h-full mx-auto rounded-t-2xl">
           <NewsletterSignup className="rounded-2xl"/>
         </footer>
       </div>
