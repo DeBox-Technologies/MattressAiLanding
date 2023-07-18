@@ -25,7 +25,7 @@ const ProductShowcase = () => {
 
   return (
     <div className='font-body 2xl:max-w-screen-2xl mx-auto lg:mt-8'>
-      <div className='bg-secondary-50 dark:bg-gray-900 mx-5 lg:mx-20 drop-shadow-xl dark:shadow-green flex flex-col lg:flex-row lg:gap-14 justify-center items-center h-[45rem] lg:h-[45rem] mt-10 rounded-xl shadow-2xl mb-14 lg:mb-24'>
+      <div className='bg-secondary-50 dark:bg-gray-900 mx-5 lg:mx-20 drop-shadow-xl flex flex-col lg:flex-row lg:gap-14 justify-center items-center h-[45rem] lg:h-[42rem] mt-10 rounded-xl shadow-2xl mb-14 lg:mb-24'>
         <div className="flex justify-center lg:w-2/3 lg:pl-12">
           <div className='flex flex-col justify-center items-center lg:items-start'>
             <h1 className='lg:ml-10 pt-12 lg:pt-0 lg:py-2 text-left text-4xl lg:text-5xl xl:text-7 font-black text-secondary-200 dark:text-secondary-50 font-header'>
@@ -36,7 +36,7 @@ const ProductShowcase = () => {
                 Sleep Better.
               </span>
             </h1>
-            <h3 className='mx-5 text-center lg:ml-10 pt-4 lg:pt-4 lg:py-2 lg:text-left text-lg lg:text-xl xl:text-2xl text-secondary-200 dark:text-secondary-50 font-header'>
+            <h3 className='mx-12 lg:mx-5 text-center lg:ml-10 pt-4 lg:pt-4 lg:py-2 lg:text-left text-md lg:text-xl xl:text-2xl text-secondary-200 dark:text-secondary-50 font-header'>
               Mattress.AI will ask the questions to help your customers pick the
               perfect premium mattress.
             </h3>

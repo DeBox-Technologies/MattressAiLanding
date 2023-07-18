@@ -10,14 +10,16 @@ function App() {
 
   return (
     <>
-      <div className='bg-primary-50 dark:bg-gray-800 min-h-screen pb-10 overflow-hidden'>
+      <div className='bg-primary-50 dark:bg-gray-800 min-h-screen overflow-hidden'>
         <Navbar />
         <ProductShowcase />
         <HeroDemo />
         <InfoCards />
         <PricingCards />
-        <NewsletterSignup />
         <EndPageHero />
+        <footer className="bg-secondary-50 dark:bg-gray-800 p-2 h-full mx-auto rounded-t-2xl">
+          <NewsletterSignup className="rounded-2xl"/>
+        </footer>
       </div>
     </>
   )
