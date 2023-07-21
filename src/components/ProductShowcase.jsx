@@ -36,15 +36,17 @@ const ProductShowcase = () => {
                 Sleep Better.
               </span>
             </h1>
-            <h3 className='mx-12 lg:mx-5 text-center lg:ml-10 pt-4 lg:pt-4 lg:py-2 lg:text-left text-md lg:text-xl xl:text-2xl text-secondary-200 dark:text-secondary-50 font-header'>
-              Mattress.AI will ask the questions to help your customers pick the
-              perfect premium mattress.
+            <h3 className='mx-12 lg:mx-16 text-center lg:ml-10 pt-4 lg:pt-8 lg:py-2 lg:text-left text-md lg:text-xl xl:text-2xl text-secondary-200 dark:text-secondary-50 font-black'>
+              Supercharge your mattress sales and lead generation with AI.
             </h3>
+            <h4 className='mx-12 lg:mx-16 text-center lg:ml-10 pt-4 lg:pt-4 lg:py-2 lg:text-left text-md lg:text-md xl:text-lg text-secondary-200 dark:text-secondary-50 font-extralight'>
+              Join Mattress AI's Early Access today and lead the future of retail.
+            </h4>
             <a
-              href='https://dashboard.themattressai.com'
+              href='http://eepurl.com/isHTp-/'
               className='lg:ml-10 bg-primary-200 hover:bg-green-500 active:bg-green-600 text-secondary-50 hover:shadow-green transition-all ease-in-out duration-300 p-2 px-8 rounded-xl lg:mt-8 mt-4'>
               <div className='flex flex-row gap-2 justify-center items-center lg:text-xl'>
-                Try Today
+                Sign Up
                 <svg
                   aria-hidden='true'
                   fill='none'

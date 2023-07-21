@@ -39,7 +39,7 @@ const InfoCards = () => {
           <h1 className='font-header text-center text-4xl md:text-5xl lg:text-7xl font-black mb-14 lg:mb-28 text-secondary-200 dark:text-secondary-50 flex justify-center items-center'>
             Selling Sleep, Seamlessly.
           </h1>
-          <div className="lg:scale-125">
+          <div className='lg:scale-125'>
             <div className='relative mx-auto border-gray-700 dark:border-gray-800 bg-gray-800 border-[16px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]'>
               <div className='relative'>
                 <img
@@ -73,14 +73,14 @@ const InfoCards = () => {
                   src='https://res.cloudinary.com/djr22sgp3/image/upload/v1688042717/people-01_nqfu4o.png'
                   className='absolute top-24 -right-52 w-1/2 z-50 bg-secondary-200 pt-2 px-2 rounded-xl shadow-2xl p-4'>
                   <h2 className='text-md leading-1 lg:text-xl font-black mb-4 text-secondary-50 pt-4 px-4'>
-                    Your Smart Mattress Sales Assistant
+                    Redefine Your Sales Strategies with MattressAI
                   </h2>
                   <p className='text-xs lg:text-md text-secondary-50/70 px-4'>
-                    MattressAI simplifies mattress sales with advanced AI
-                    technology, it provides personalized recommendations based
-                    on your sleep preferences, body type, and budget, ensuring a
-                    comfortable and restful sleep experience tailored to your
-                    needs.
+                    Experience the power of conversational, instant customer
+                    interactions. MattressAI, your smart sales assistant, uses
+                    advanced AI to provide personalized mattress
+                    recommendations. Forget lengthy quizzes and waiting times,
+                    elevate your sales with MattressAI.
                   </p>
                 </div>
               </div>
@@ -101,13 +101,14 @@ const InfoCards = () => {
             <div className='relative mx-auto bg-gray-600 rounded-b-xl h-[55px] max-w-[83px] md:h-[95px] md:max-w-[142px]' />
             <div className='lg:hidden p-8 my-5 bg-secondary-200 dark:from-gray-800 dark:to-primary-200 rounded-xl'>
               <h2 className='text-xl leading-1 font-black mb-4 text-secondary-50'>
-                Your Smart Mattress Sales Assistant
+                Redefine Your Sales Strategies with MattressAI
               </h2>
               <p className='text-sm text-secondary-50'>
-                MattressAI simplifies mattress sales with advanced AI
-                technology, it provides personalized recommendations based on
-                your sleep preferences, body type, and budget, ensuring a
-                comfortable and restful sleep experience tailored to your needs.
+                Experience the power of conversational, instant customer
+                interactions. MattressAI, your smart sales assistant, uses
+                advanced AI to provide personalized mattress recommendations.
+                Forget lengthy quizzes and waiting times, elevate your sales
+                with MattressAI.
               </p>
             </div>
           </div>

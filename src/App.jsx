@@ -4,7 +4,7 @@ import HeroDemo from "./components/HeroDemo"
 import PricingCards from "./components/PricingCards"
 import InfoCards from "./components/Infocards"
 import EndPageHero from "./components/EndPageHero"
-import NewsletterSignup from "./components/NewsletterSignup"
+// import NewsletterSignup from "./components/NewsletterSignup"
 
 function App() {
 
@@ -17,9 +17,9 @@ function App() {
         <InfoCards />
         <PricingCards />
         <EndPageHero />
-        <footer className="bg-secondary-50 dark:bg-gray-900 p-2 h-full mx-auto rounded-t-2xl">
+        {/* <footer className="bg-secondary-50 dark:bg-gray-900 p-2 h-full mx-auto rounded-t-2xl">
           <NewsletterSignup className="rounded-2xl"/>
-        </footer>
+        </footer> */}
       </div>
     </>
   )
