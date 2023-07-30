@@ -123,23 +123,6 @@ const PricingCards = () => {
                     clipRule='evenodd'></path>
                 </svg>
                 <span className='text-base font-normal leading-tight text-gray-500'>
-                  30-minute setup for inventory function
-                </span>
-              </li>
-              <li className='flex space-x-3 line-through decoration-gray-500'>
-                <svg
-                  aria-hidden='true'
-                  className='flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'>
-                  <title>Check icon</title>
-                  <path
-                    fillRule='evenodd'
-                    d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z'
-                    clipRule='evenodd'></path>
-                </svg>
-                <span className='text-base font-normal leading-tight text-gray-500'>
                   Full Customization (Company Logo, Branding, etc.)
                 </span>
               </li>
@@ -286,23 +269,6 @@ const PricingCards = () => {
                     clipRule='evenodd'></path>
                 </svg>
                 <span className='text-base font-normal leading-tight text-gray-500'>
-                  30-minute setup for inventory function
-                </span>
-              </li>
-              <li className='flex space-x-3 line-through decoration-gray-500'>
-                <svg
-                  aria-hidden='true'
-                  className='flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'>
-                  <title>Check icon</title>
-                  <path
-                    fillRule='evenodd'
-                    d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z'
-                    clipRule='evenodd'></path>
-                </svg>
-                <span className='text-base font-normal leading-tight text-gray-500'>
                   Full Customization (Company Logo, Branding, etc.)
                 </span>
               </li>
@@ -432,23 +398,6 @@ const PricingCards = () => {
                     clipRule='evenodd'></path>
                 </svg>
                 <span className='text-base font-normal leading-tight text-gray-500 dark:text-gray-400'>
-                  30-minute setup for inventory function
-                </span>
-              </li>
-              <li className='flex space-x-3'>
-                <svg
-                  aria-hidden='true'
-                  className='flex-shrink-0 w-5 h-5 text-primary-200 dark:text-primary-200'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'>
-                  <title>Check icon</title>
-                  <path
-                    fillRule='evenodd'
-                    d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z'
-                    clipRule='evenodd'></path>
-                </svg>
-                <span className='text-base font-normal leading-tight text-gray-500 dark:text-gray-400'>
                   30-minute setup for branding
                 </span>
               </li>
@@ -496,9 +445,9 @@ const PricingCards = () => {
         </div>
       </div>
       <div className='2xl:max-w-screen-2xl mx-auto'>
-        <div className='flex flex-row justify-center items-center gap-6 mt-24 bg-no-repeat bg-cover bg-[url("https://res.cloudinary.com/djr22sgp3/image/upload/v1688031512/bgBlur_wpeme9.webp")] mx-5 md:mx-20 py-14 rounded-xl mb-24'>
+        <div className='flex flex-row justify-center items-center gap-6 mt-24 bg-gradient-to-br from-secondary-50 to-primary-100 dark:from-gray-800 dark:to-primary-200 mx-5 md:mx-20 py-14 rounded-xl mb-24'>
           <div className='flex justify-center items-center top-0 right-4'>
-            <div className='bg-secondary-200/60 border border-gray-200 rounded-lg shadow max-w-xs'>
+            <div className='bg-gray-800/60 border border-gray-200 rounded-lg shadow max-w-xs'>
               <div className='flex flex-col justify-center items-center my-8 text-white'>
                 <svg
                   className='w-12 h-12 lg:w-24 lg:h-24'

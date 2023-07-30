@@ -87,13 +87,13 @@ const InfoCards = () => {
               <div className='rounded-xl overflow-hidden h-[140px] md:h-[262px]'>
                 <video
                   ref={videoRef}
-                  className='w-full h-full object-fit object-center bg-gray-950 py-2'
+                  className='w-full h-full object-cover object-center bg-gray-800'
                   autoPlay
                   loop
                   muted
                   playsInline
                   disablePictureInPicture
-                  src='https://res.cloudinary.com/djr22sgp3/video/upload/v1688659307/MattressAi_-_Demo_dpa45r.mov'
+                  src='https://res.cloudinary.com/djr22sgp3/video/upload/e_accelerate:14/v1690730344/Mattress-Demo_g00rtd.mov'
                 />
               </div>
             </div>

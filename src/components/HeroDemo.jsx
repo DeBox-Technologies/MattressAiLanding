@@ -29,12 +29,12 @@ const HeroDemo = () => {
       <h1 className="my-14 xl:my-14 pb-4 text-center mx-5 lg:mx-0 text-4xl md:text-4.5xl lg:text-7xl font-black text-secondary-200 dark:text-secondary-50 font-header">Revolutionize Your Interactions.</h1>
         <div className='mockup-window -mr-36 md:mr-0 bg-primary-200 w-[88%] shadow-xl mb-4' style={{ transform: `translateY(-${offsetY * 0.5}px) scale(${1 + offsetY * 0.00075})` }}>
           <div className='px-4 py-2 bg-gray-700 flex justify-center items-center'>
-            <img src="https://res.cloudinary.com/djr22sgp3/image/upload/v1688475339/Dashboard-Home_kzmzeq.png" className="bg-cover rounded-2xl mt-2" />
+            <img src="https://res.cloudinary.com/djr22sgp3/image/upload/v1690731668/Screenshot_2023-07-30_at_16.40.43_tfgbiw.png" className="bg-cover rounded-2xl mt-2" />
           </div>
         </div>
         <div className='mockup-window -ml-36 md:hidden bg-primary-200 w-[88%] shadow-xl mb-4' style={{ transform: `translateY(-${offsetY * 0.15}px) scale(${1 + offsetY * 0.00075})` }}>
           <div className='px-4 py-2 bg-gray-700 flex justify-center items-center'>
-            <img src="https://res.cloudinary.com/djr22sgp3/image/upload/v1688475339/Dashboard-Home_kzmzeq.png" className="bg-cover" />
+            <img src="https://res.cloudinary.com/djr22sgp3/image/upload/v1690731668/Screenshot_2023-07-30_at_16.40.43_tfgbiw.png" className="bg-cover" />
           </div>
         </div>
         <div className='absolute w-full hidden lg:inline-block'>
